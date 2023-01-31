@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav {
+  margin-left: $pad * 42.5;
+}
+
+.header__nav > ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}

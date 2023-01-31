@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500&display=swap');
+@import 'uikit/src/scss/variables-theme.scss';
+@import 'uikit/src/scss/mixins-theme.scss';
+@import 'uikit/src/scss/uikit-theme.scss';
+@import './variables.scss';
+@import './mixins.scss';
+@import './media.scss';
+@import './header.scss';
+@import './dropdown.scss';
+@import './arrow.scss';
+@import './accordion.scss';
+@import './news.scss';
+@import './subscribe.scss';
+@import './footer.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: $full;
+  font-size: $defaultFz;
+  font-family: 'M PLUS 1p', sans-serif;
+  line-height: 1.5;
+  color: $colorMain;
+  background-color: $bgColorMain;
+}
+
+body {
+  height: $full;
+  margin: 0;
+}
+
+a {
+  font-weight: $mWeight;
+  font-size: 14px;
+  color: $colorMain;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $hoverColor;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  color: $colorMain;
+}
+
+li {
+  list-style: none;
+  font-size: $defaultFz;
+}
+
+h2 {
+  font-size: $defaultFz * 5;
+  font-weight: $mWeight;
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: $defaultFz * 1.5;
+}
+
+h4 {
+  font-weight: $mWeight;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+  height: 0;
+  display: block;
+  border: 1px solid $hrBorder;
+}
+
+// .hidden {
+//   display: none;
+// }
+
+.app {
+  min-height: $full;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: $bgColorMain;
+}
+
+.app__header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: $bgColorMain;
+}
+
+.app__main--white {
+  background-color: $colorMain;
+}
+
+.app__content {
+  margin: 0 auto;
+  max-width: $largeMaxWidth - $pad * 20 * 2;
+}
+
+#slider {
+  margin-top: 100px;
+}
+
+.uk-position-absolute {
+  bottom: $pad * 32;
+}

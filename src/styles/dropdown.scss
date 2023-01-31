@@ -1,0 +1,52 @@
+.dropdown:focus-within hr {
+  display: block;
+}
+
+.dropdown__title {
+  padding: $pad * 4 0;
+  cursor: pointer;
+  position: relative;
+
+  > hr {
+    margin: 0;
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: $full;
+    border-bottom: 3px solid $colorMain;
+  }
+}
+
+.dropdown__title:hover {
+  color: $hoverColor;
+}
+
+.dropdown__menu-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  white-space: nowrap;
+  padding-top: $pad * 15;
+  background: $bgColorMain;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.25s;
+}
+
+.hidden {
+  :hover > &,
+  :focus-within > & {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.dropdown__menu {
+  display: grid;
+  grid-template-columns: repeat(2, 110px);
+  gap: $pad * 6 $pad * 25;
+  padding-left: $pad * 51;
+}

@@ -1,0 +1,7 @@
+@mixin app($min-width) {
+  min-height: $full;
+  min-width: $min-width;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: $bgColorMain;
+}

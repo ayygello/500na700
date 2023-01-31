@@ -1,0 +1,47 @@
+.arrow {
+  padding: $pad * 11 0 $pad * 30;
+  display: flex;
+  justify-content: center;
+}
+
+.arrow__link {
+  padding: 0 $pad * 6.5;
+  cursor: pointer;
+
+  :hover {
+    border-color: $hoverColor;
+
+    .arrow__frame {
+      border-color: $hoverColor;
+    }
+  }
+}
+
+.arrow__body {
+  width: 100px;
+  height: $pad * 2 + 1;
+  border-bottom: 3px solid $colorMain;
+  position: relative;
+}
+
+.arrow__frame {
+  position: absolute;
+  border: solid $colorMain;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.arrow__frame-right {
+  right: 0;
+  bottom: -5px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.arrow__frame-left {
+  left: 0;
+  bottom: -5px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}

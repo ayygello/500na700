@@ -1,0 +1,34 @@
+.footer__content {
+  padding: $pad * 10 0 $pad * 16;
+  display: flex;
+}
+
+.footer__body {
+  margin-right: $pad * 24;
+  max-width: $pad * 80;
+
+  h4 {
+    padding-bottom: $pad * 2;
+  }
+
+  p {
+    padding-bottom: $pad * 5;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.footer__socials {
+  max-width: $pad * 50;
+}
+
+.fa-brands {
+  font-size: $pad * 6;
+  margin-right: 30px;
+}

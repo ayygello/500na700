@@ -1,0 +1,58 @@
+.subscribe__content {
+  padding: $pad * 10 0;
+  color: $bgColorMain;
+  h2 {
+    color: $bgColorMain;
+  }
+}
+
+.form {
+  padding-top: $pad * 6;
+}
+
+.form__label {
+  padding-bottom: $pad * 3;
+  max-width: $pad * 80;
+}
+
+.form__input-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: $pad * 200;
+}
+
+.form__input {
+  margin: 0 $pad * 4 $pad * 4 0;
+  padding: $pad * 3;
+  min-width: $pad * 80;
+  border: 1px solid $inputBorder;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.form__input::placeholder {
+  color: $placeholderColor;
+}
+
+.form__input:focus {
+  border-color: $bgColorMain;
+}
+
+.form__input:focus-visible,
+.form__submit:focus-visible {
+  outline: none;
+}
+
+.form__submit {
+  padding: $pad * 3 $pad * 4;
+  border: 1px solid $inputBorder;
+  border-radius: 10px;
+  background: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.form__submit:hover {
+  background: $hoverColor;
+  border-color: $hoverColor;
+}

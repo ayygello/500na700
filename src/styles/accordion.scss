@@ -1,0 +1,33 @@
+.accordion {
+  padding-bottom: $pad * 20;
+}
+
+.accordion__content {
+  display: flex;
+}
+
+.accordion__title {
+  padding-right: $pad * 20;
+}
+
+.accordion__body {
+  width: $full;
+}
+
+.accordion__item-title {
+  cursor: pointer;
+  padding: $pad * 6 0;
+}
+
+.accordion__item-title:hover {
+  color: $hoverColor;
+}
+
+.accordion__item-body {
+  display: none;
+  padding-bottom: $pad * 6;
+}
+
+.accordion__item-body--active {
+  display: block;
+}

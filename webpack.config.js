@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const CopyPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackInlineSVGPlugin = require('html-webpack-inline-svg-plugin');
 
 const pages = [
   {
@@ -71,6 +72,9 @@ let config = {
       ],
     }),
     new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackInlineSVGPlugin({
+      runPreLimit: true,
+    }),
   ].concat(pages),
   performance: {
     hints: false,

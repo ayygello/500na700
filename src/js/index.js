@@ -70,9 +70,11 @@ const setCurrentDate = () => {
   const hour = date.getHours();
   const minute = date.getMinutes();
 
-  dateInput.value = `${year}-${getMonth(month)}-${day}`;
-  timeInput.value = `${hour}:${minute}`;
+  dateInput.value = `${year}-${getMonth(month)}-${getDate(day)}`;
+  timeInput.value = `${getDate(hour)}:${getDate(minute)}`;
 };
+
+const getDate = (time) => (time < 10 ? `0${time}` : time);
 
 const getMonth = (month) => {
   return month > 9 ? month++ : `0${month + 1}`;

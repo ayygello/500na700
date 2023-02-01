@@ -13,14 +13,15 @@
 
 .news__body {
   display: grid;
-  grid-template-columns: repeat(3, 400px);
-  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: $pad * 10 $pad * 4;
+  overflow-y: scroll;
 }
 
 .news__item {
   cursor: pointer;
   transition: 0.5s;
+  max-width: 400px;
 
   > h4 {
     padding-top: $pad * 6;

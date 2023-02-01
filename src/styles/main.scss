@@ -85,14 +85,10 @@ hr {
   border: 1px solid $hrBorder;
 }
 
-// .hidden {
-//   display: none;
-// }
-
 .app {
   min-height: $full;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  // display: grid;
+  // grid-template-rows: auto 1fr auto;
   background-color: $bgColorMain;
 }
 

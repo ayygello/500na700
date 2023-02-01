@@ -25,6 +25,10 @@
     padding: $pad * 15 $pad * 20 $pad * 18;
   }
 
+  .footer__body {
+    width: 33.333%;
+  }
+
   .uk-position-absolute {
     left: $pad * 10;
   }
@@ -56,6 +60,10 @@
   .dropdown__menu-container {
     padding: $pad * 10 $pad * 13.5 $pad * 12;
   }
+
+  .footer__body {
+    width: 33.333%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -82,7 +90,8 @@
   }
 
   .popup {
-    display: block;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .accordion__content {
@@ -115,6 +124,11 @@
   .footer__content {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .footer__body {
+    width: $full;
+    max-width: $pad * 80;
   }
 
   .footer__socials {

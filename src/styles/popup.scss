@@ -1,8 +1,6 @@
 .popup {
   position: absolute;
   right: $pad * 3;
-  display: flex;
-  flex-direction: column-reverse;
 }
 
 .popup__toggle {
@@ -85,6 +83,8 @@
   background: $bgColorMain;
   padding-top: $pad * 6;
 
+  :active > &,
+  :focus > &,
   :hover > & {
     display: flex;
     flex-direction: column;

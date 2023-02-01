@@ -12,6 +12,7 @@
 @import './news.scss';
 @import './subscribe.scss';
 @import './footer.scss';
+@import './popup.scss';
 
 *,
 *::before,
@@ -63,6 +64,7 @@ li {
   font-size: $defaultFz;
 }
 
+h1,
 h2 {
   font-size: $defaultFz * 5;
   font-weight: $mWeight;

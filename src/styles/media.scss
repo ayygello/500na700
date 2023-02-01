@@ -17,6 +17,10 @@
     display: block;
   }
 
+  .popup {
+    display: none;
+  }
+
   .dropdown__menu-container {
     padding: $pad * 15 $pad * 20 $pad * 18;
   }
@@ -43,6 +47,10 @@
 
   .header__nav {
     display: block;
+  }
+
+  .popup {
+    display: none;
   }
 
   .dropdown__menu-container {
@@ -73,15 +81,20 @@
     display: none;
   }
 
+  .popup {
+    display: block;
+  }
+
   .accordion__content {
     flex-direction: column;
   }
 
-  .accordion__title,
-  .news__title,
-  .subscribe__title {
+  .slider__title,
+  .accordion__title > h2,
+  .news__title > h2,
+  .subscribe__title > h2 {
     padding-bottom: $pad * 8;
-    font-size: calc($defaultFz / 2);
+    font-size: $defaultFz * 2.5;
   }
 
   .news__content > .news__body {
